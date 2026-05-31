@@ -34,3 +34,5 @@ RUN uv sync --no-dev
 # Fix permissions for the app dir
 RUN chown -R spotdl:spotdl /app
 
+# Botni ishga tushiruvchi buyruq
+CMD ["spotdl", "web"]
