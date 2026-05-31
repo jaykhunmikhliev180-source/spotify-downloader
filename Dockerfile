@@ -9,19 +9,7 @@ ARG UID=1000
 ARG GID=1000
 
 # Install dependencies
-RUN apk add --no-cache \
-    ca-certificates \
-    ffmpeg \
-    openssl \
-    aria2 \
-    g++ \
-    git \
-    py3-cffi \
-    libffi-dev \
-    zlib-dev gcompat
 
-# Install uv and update pip/wheel
-RUN pip install --upgrade pip uv wheel spotipy
 
 # Create spotdl user and group
 RUN addgroup -g $GID spotdl && \
