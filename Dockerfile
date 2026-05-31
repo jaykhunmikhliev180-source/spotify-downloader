@@ -17,8 +17,9 @@ RUN apk add --no-cache \
     git \
     py3-cffi \
     libffi-dev \
-    zlib-dev
-RUN apk add --no-cache gcompat libc6-compat
+    zlib-dev \
+RUN apk add --no-cache \ 
+    gcompat \ libc6-compat \
 
 # Install uv and update pip/wheel
 RUN pip install --upgrade pip uv wheel spotipy
