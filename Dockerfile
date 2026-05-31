@@ -17,7 +17,8 @@ RUN apk add --no-cache \
     git \
     py3-cffi \
     libffi-dev \
-    zlib-dev \
+    zlib-dev gcompat \
+
 RUN apk add --no-cache gcompat
     libc6-compat
 
